@@ -32,6 +32,7 @@ function draw() {
     textSize(40);
   textAlign(CENTER);
     text("strokes in the sea", width/2, height/2+50);
+    text("shake to make the water cleaner", width/2, height/2+300);
     textSize(90);
   text(value,width/2,height/2);
     setShakeThreshold(shake); //livello minimo di attivazione dello shake
