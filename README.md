@@ -1,2 +1,2 @@
- Works on mobile
-(shaking mode)
+ Works on your mobile
+(shaking it)
