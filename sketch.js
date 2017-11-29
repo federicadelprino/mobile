@@ -40,8 +40,9 @@ function draw() {
     textFont('Futura');
   textAlign(CENTER);
     text("strokes in the sea", width/2, 4*height/7);
-    text("shake to make the water cleaner", width/2, 5.6*height/6);
-    text("and reach the top", width/2, 8*height/8);
+    text("shake to make the water cleaner", width/2, 6*height/6-200);
+    text("and reach the top", width/2, 5.6*height/6);
+    
     textSize(90);
   text(value,width/2,height/2);
     setShakeThreshold(shake); //livello minimo di attivazione dello shake
