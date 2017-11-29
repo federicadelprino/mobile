@@ -1,12 +1,18 @@
 var value = 5;
 var shake = 10;
 
+var swim;
 var balls = []; 
 
 var threshold = 30;
 var accChangeX = 0; 
 var accChangeY = 0;
 var accChangeT = 0;
+
+function preload() {
+	
+    swim = loadImage("assets/swim.png");
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -32,7 +38,8 @@ function draw() {
     textSize(40);
   textAlign(CENTER);
     text("strokes in the sea", width/2, height/2+50);
-    text("shake to make the water cleaner", width/2, height/2+300);
+    text("shake to make the water cleaner", width/2, height/2+250);
+    text("and reach the top", width/2, height/2+300);
     textSize(90);
   text(value,width/2,height/2);
     setShakeThreshold(shake); //livello minimo di attivazione dello shake
@@ -130,6 +137,7 @@ function shakeBalls() {
     for (var i=0; i<balls.length; i++) {
       balls[i].shake();
       balls[i].turn();
+      image(swim,width/2-47,random(100));
     }
   } 
   // If not shake
@@ -138,6 +146,7 @@ function shakeBalls() {
       balls[i].stopShake();
       balls[i].turn();
       balls[i].move(); 
+      image(swim,width/2-47,height/2+100);
     }
   }
 }
