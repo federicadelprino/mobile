@@ -16,6 +16,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+    angleMode(DEGREES);
   
   for (var i=0; i<20; i++) {
     balls.push(new Ball());
@@ -36,6 +37,7 @@ function draw() {
     
     
     textSize(30);
+    textFont('Futura');
   textAlign(CENTER);
     text("strokes in the sea", width/2, height/2+50);
     text("shake to make the water cleaner", width/2, height/2+250);
