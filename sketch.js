@@ -35,7 +35,7 @@ function draw() {
   shakeBalls();
     
     
-    textSize(40);
+    textSize(30);
   textAlign(CENTER);
     text("strokes in the sea", width/2, height/2+50);
     text("shake to make the water cleaner", width/2, height/2+250);
